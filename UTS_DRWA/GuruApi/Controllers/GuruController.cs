@@ -18,17 +18,17 @@ public class GuruController : ControllerBase
     {
         await _guruService.CreateAsync(newGuru);
 
-        return CreatedAtAction(nameof(Get), new { id = newGuru.nip }, newGuru);
+        return CreatedAtAction(nameof(Get), new { id = newGuru.NIP }, newGuru);
     }
 
     [HttpGet]
     public async Task<List<Guru>> Get() =>
         await _guruService.GetAsync();
 
-    [HttpGet("{nip:length(24)}")]
-    public async Task<ActionResult<Guru>> Get(string nip)
+    [HttpGet("{NIP:length(24)}")]
+    public async Task<ActionResult<Guru>> Get(string NIP)
     {
-        var guru = await _guruService.GetAsync(nip);
+        var guru = await _guruService.GetAsync(NIP);
 
         if (guru is null)
         {

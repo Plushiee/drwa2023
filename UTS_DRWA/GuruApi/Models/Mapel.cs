@@ -7,11 +7,12 @@ public class Mapel
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    public string? id { get; set; }
+    public string? Id { get; set; }
+    public string? idMapel { get; set; }
 
-    [BsonElement("Name")]
-    public string mapel { get; set; } = null!;
+    [BsonElement("namaMapel")]
+    public string namaMapel { get; set; } = null!;
 
-    public string ruang { get; set; } = null!;
+    public string semester { get; set; } = null!;
 
 }

@@ -14,21 +14,22 @@ public class JadwalController : ControllerBase
         _jadwalService = jadwalService;
 
     [HttpPost]
-    public async Task<IActionResult> Post(Guru newJadwal)
+    public async Task<IActionResult> Post(Jadwal newJadwal)
     {
         await _jadwalService.CreateAsync(newJadwal);
 
-        return CreatedAtAction(nameof(Get), new { id = newJadwal.nip }, newJadwal);
+        return CreatedAtAction(nameof(Get), new { id = newJadwal.idJadwal }, newJadwal);
     }
 
     [HttpGet]
-    public async Task<List<Guru>> Get() =>
+    public async Task<List<Jadwal>> Get() =>
         await _jadwalService.GetAsync();
+        
 
-    [HttpGet("{nip:length(24)}")]
-    public async Task<ActionResult<Guru>> Get(string nip)
+    [HttpGet("{NIP:length(24)}")]
+    public async Task<ActionResult<Jadwal>> Get(string NIP)
     {
-        var jadwal = await _jadwalService.GetAsync(nip);
+        var jadwal = await _jadwalService.GetAsync(NIP);
 
         if (jadwal is null)
         {
@@ -39,8 +40,8 @@ public class JadwalController : ControllerBase
         
     }
 
-     [HttpGet("{id_mapel:length(24)}")]
-    public async Task<ActionResult<Guru>> get(string idMapel)
+     [HttpGet("{idMapel:length(24)}")]
+    public async Task<ActionResult<Jadwal>> GetByIdMapel(string idMapel)
     {
         var jadwal = await _jadwalService.GetAsync(idMapel);
 
