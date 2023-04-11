@@ -25,7 +25,7 @@ public class MapelController : ControllerBase
     public async Task<List<Mapel>> Get() =>
         await _mapelService.GetAsync();
 
-    [HttpGet("{NIP:length(24)}")]
+    [HttpGet("{NIP}")]
     public async Task<ActionResult<Mapel>> Get(string idMapel)
     {
         var mapel = await _mapelService.GetAsync(idMapel);

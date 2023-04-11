@@ -25,7 +25,7 @@ public class GuruController : ControllerBase
     public async Task<List<Guru>> Get() =>
         await _guruService.GetAsync();
 
-    [HttpGet("{NIP:length(24)}")]
+    [HttpGet("{NIP}")]
     public async Task<ActionResult<Guru>> Get(string NIP)
     {
         var guru = await _guruService.GetAsync(NIP);

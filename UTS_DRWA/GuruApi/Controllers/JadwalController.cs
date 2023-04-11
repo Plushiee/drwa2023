@@ -24,9 +24,9 @@ public class JadwalController : ControllerBase
     [HttpGet]
     public async Task<List<Jadwal>> Get() =>
         await _jadwalService.GetAsync();
-        
 
-    [HttpGet("{NIP:length(24)}")]
+
+    [HttpGet("{NIP}")]
     public async Task<ActionResult<Jadwal>> Get(string NIP)
     {
         var jadwal = await _jadwalService.GetAsync(NIP);
@@ -40,7 +40,7 @@ public class JadwalController : ControllerBase
         
     }
 
-     [HttpGet("{idMapel:length(24)}")]
+     [HttpGet("{idMapel}")]
     public async Task<ActionResult<Jadwal>> GetByIdMapel(string idMapel)
     {
         var jadwal = await _jadwalService.GetAsync(idMapel);
