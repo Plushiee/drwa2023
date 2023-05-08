@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tP2T58YVbdZCHQhjYWFAhGhP6QWVB2UW8GEJo87pXwDG6UvGwPbbPbbEYluiW3wddd72dkcc9cuXSfAQCKotvA==",
+  "dgSpecHash": "McxS65AvL2VgpBo2kA5vrXMKiqZIlWduWwoP2DKGLssBtCbBp6+6LHQvzOgqVRIptfmPg1SUUmYvIDyxF34r9A==",
   "success": true,
-  "projectFilePath": "D:\\drwa2023\\BookStoreApi\\BookStoreApi.csproj",
+  "projectFilePath": "D:\\drwa2023\\BookStoreApiWithValidation\\BookStoreApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\M S I\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\M S I\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

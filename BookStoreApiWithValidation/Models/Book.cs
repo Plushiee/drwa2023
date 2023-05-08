@@ -19,7 +19,7 @@ public class Book
     
     [Required]
     [Range(0, 999)]
-    public decimal Price { get; set; }
+    public decimal? Price { get; set; } = null!;
     
     [Required]
     [StringLength(100, MinimumLength = 2)]
