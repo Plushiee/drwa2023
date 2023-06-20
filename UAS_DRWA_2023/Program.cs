@@ -22,7 +22,7 @@ builder.Services.Configure<MapelDatabaseSettings>(
 builder.Services.AddSingleton<MapelService>();
 
 builder.Services.Configure<PresensiHarianGuruDatabaseSettings>(
-    builder.Configuration.GetSection("PresensiHariaGuruDatabase"));
+    builder.Configuration.GetSection("PresensiHarianGuruDatabase"));
 builder.Services.AddSingleton<PresensiHarianGuruService>();
 
 builder.Services.Configure<PresensiMengajarDatabaseSettings>(
@@ -42,8 +42,8 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "BookStore API",
-        Description = "An ASP.NET Core Web API for managing BookStore items",
+        Title = "Guru API",
+        Description = "An ASP.NET Core Web API for managing Guru, by Nikolaus Pastika Bara Satyaradi - 72210456",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {

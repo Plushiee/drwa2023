@@ -18,7 +18,7 @@ public class PresensiHarianGuruService
             presensiHarianGuruDatabaseSettings.Value.DatabaseName);
 
         _presensiHarianGuruCollection = mongoDatabase.GetCollection<PresensiHarianGuru>(
-            presensiHarianGuruDatabaseSettings.Value.PresensiHarianGuruCollectionName);
+            presensiHarianGuruDatabaseSettings.Value.PreseniHarianGuruCollectionName);
     }
 
     public async Task<List<PresensiHarianGuru>> GetAsync() =>

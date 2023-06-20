@@ -6,5 +6,5 @@ public class PresensiHarianGuruDatabaseSettings
 
     public string DatabaseName { get; set; } = null!;
 
-    public string PresensiHarianGuruCollectionName { get; set; } = null!;
+    public string PreseniHarianGuruCollectionName { get; set; } = null!;
 }
