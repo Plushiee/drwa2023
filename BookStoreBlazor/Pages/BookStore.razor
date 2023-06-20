@@ -1,0 +1,50 @@
+﻿@page "/bookstore"
+@using BookStoreBlazor.Data
+@inject HttpClient Http
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Book Store</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (bookstores == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Book Name</th>
+                <th>Price</th>
+                <th>Cathegory</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bookstore in bookstores)
+            {
+                Console.WriteLine(bookstore.ToString());
+                <tr>
+                    <td>@bookstore.Id</td>
+                    <td>@bookstore.Name</td>
+                    <td>@bookstore.Price</td>
+                    <td>@bookstore.Category</td>
+                    <td>@bookstore.Author</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Book[]? bookstores;
+
+    protected override async Task OnInitializedAsync()
+    {
+        bookstores = await Http.GetFromJsonAsync<Book[]>("http://localhost:5142/api/Books");
+    }
+}

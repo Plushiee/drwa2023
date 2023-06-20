@@ -159,3 +159,10 @@ D:\drwa2023\BookStoreApiWithValidation\obj\Debug\net7.0\BookStoreApi.pdb
 D:\drwa2023\BookStoreApiWithValidation\obj\Debug\net7.0\BookStoreApi.genruntimeconfig.cache
 D:\drwa2023\BookStoreApiWithValidation\obj\Debug\net7.0\ref\BookStoreApi.dll
 D:\drwa2023\BookStoreApiWithValidation\bin\Debug\net7.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\drwa2023\BookStoreApiWithValidation\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\drwa2023\BookStoreApiWithValidation\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\drwa2023\BookStoreApiWithValidation\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\drwa2023\BookStoreApiWithValidation\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\drwa2023\BookStoreApiWithValidation\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\drwa2023\BookStoreApiWithValidation\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\drwa2023\BookStoreApiWithValidation\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
